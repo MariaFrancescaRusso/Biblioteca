@@ -1,0 +1,6 @@
+22:49:48.047 [main] INFO  persistence.AutoreDAO -- dropTable() --> DROP: DROP TABLE autori CASCADE
+22:49:48.447 [main] DEBUG persistence.AutoreDAO -- DROP executed
+22:49:48.448 [main] INFO  persistence.AutoreDAO -- createTable() --> CREATE: CREATE TABLE autori ( id INT PRIMARY KEY, nome VARCHAR NOT NULL, cognome VARCHAR NOT NULL )
+22:49:48.539 [main] DEBUG persistence.AutoreDAO -- CREATE executed
+22:49:48.540 [main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
+22:49:48.621 [main] DEBUG persistence.AutoreDAO -- INSERT executed

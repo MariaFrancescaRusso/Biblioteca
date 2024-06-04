@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+
+<configuration>
+	<!-- Basic configuration on Console -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- configuration on File autore.log -->
+	<appender name="AutoreFILE" class="ch.qos.logback.core.FileAppender">
+		<file>autore.log</file>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+<!-- 			<pattern>%date %level [%thread] %logger{10} [%file:%line] -%kvp- %msg%n</pattern> -->
+		</encoder>
+	</appender>  
+	
+	<!-- configuration on File libro.log -->
+	<appender name="LibroFILE" class="ch.qos.logback.core.FileAppender">
+		<file>libro.log</file>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%kvp- %msg%n</pattern>
+<!-- 			<pattern>%date %level [%thread] %logger{10} [%file:%line] -%kvp- %msg%n</pattern> -->
+		</encoder>
+	</appender>  
+
+	<!-- File autore.log with only its log -->
+	<logger name="persistence.AutoreDAO">
+		<appender-ref ref="AutoreFILE" /> 
+	</logger> 
+	
+	<!-- File libro.log with only its log -->
+	<logger name="persistence.LibroDAO">
+		<appender-ref ref="LibroFILE" />
+	</logger> 
+
+	<root level="debug">
+		<appender-ref ref="STDOUT" />  
+<!-- 		<appender-ref ref="FILE" /> -->
+	</root>
+</configuration> 

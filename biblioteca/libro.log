@@ -1,0 +1,6 @@
+22:49:48.623 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+22:49:48.698 [main] DEBUG persistence.LibroDAO -- DROP executed
+22:49:48.698 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id INT PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+22:49:48.782 [main] DEBUG persistence.LibroDAO -- CREATE executed
+22:49:48.783 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(id, titolo, idAutore, lingua) VALUES (?,?,?,?)
+22:49:48.835 [main] DEBUG persistence.LibroDAO -- INSERT executed
