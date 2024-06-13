@@ -1,0 +1,21 @@
+19:55:57.064 [main] INFO  persistence.AutoreDAO -- dropTable() --> DROP: DROP TABLE autori CASCADE
+19:55:57.466 [main] DEBUG persistence.AutoreDAO -- DROP executed
+19:55:57.467 [main] INFO  persistence.AutoreDAO -- createTable() --> CREATE: CREATE TABLE autori ( id INT PRIMARY KEY, nome VARCHAR NOT NULL, cognome VARCHAR NOT NULL )
+19:55:57.565 [main] DEBUG persistence.AutoreDAO -- CREATE executed
+19:55:57.566 [main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
+19:55:57.648 [main] DEBUG persistence.AutoreDAO -- INSERT executed
+19:55:57.649 [main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
+19:55:57.719 [main] DEBUG persistence.AutoreDAO -- INSERT executed
+20:00:13.070 [main] INFO  persistence.AutoreDAO -- dropTable() --> DROP: DROP TABLE autori CASCADE
+20:00:13.464 [main] DEBUG persistence.AutoreDAO -- DROP executed
+20:00:13.465 [main] INFO  persistence.AutoreDAO -- createTable() --> CREATE: CREATE TABLE autori ( id INT PRIMARY KEY, nome VARCHAR NOT NULL, cognome VARCHAR NOT NULL )
+20:00:13.554 [main] DEBUG persistence.AutoreDAO -- CREATE executed
+20:00:13.557 [main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
+20:00:13.638 [main] DEBUG persistence.AutoreDAO -- INSERT executed
+20:00:13.639 [main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
+20:00:13.717 [main] DEBUG persistence.AutoreDAO -- INSERT executed
+20:00:14.215 [main] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+20:00:14.270 [main] DEBUG persistence.AutoreDAO -- SELECT executed
+20:00:14.270 [main] INFO  persistence.AutoreDAO -- read_all() --> SELECT: SELECT * FROM autori
+20:00:14.318 [main] DEBUG persistence.AutoreDAO -- SELECT executed
+20:00:14.318 [main] DEBUG persistence.AutoreDAO -- SELECT executed

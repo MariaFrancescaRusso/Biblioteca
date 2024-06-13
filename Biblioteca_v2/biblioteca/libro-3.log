@@ -1,0 +1,30 @@
+18:17:46.361 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+18:17:46.441 [main] DEBUG persistence.LibroDAO -- DROP executed
+18:17:46.441 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id INT PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+18:17:46.524 [main] DEBUG persistence.LibroDAO -- CREATE executed
+18:17:46.526 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(id, titolo, idAutore, lingua) VALUES (?,?,?,?)
+18:17:46.577 [main] DEBUG persistence.LibroDAO -- INSERT executed
+18:17:48.520 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+18:17:48.603 [main] DEBUG persistence.LibroDAO -- DROP executed
+18:17:48.603 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id INT PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+18:17:48.678 [main] DEBUG persistence.LibroDAO -- CREATE executed
+18:17:48.680 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(id, titolo, idAutore, lingua) VALUES (?,?,?,?)
+18:17:48.749 [main] DEBUG persistence.LibroDAO -- INSERT executed
+17:41:08.334 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+17:41:08.417 [main] DEBUG persistence.LibroDAO -- DROP executed
+17:41:08.418 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id INT PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+17:41:08.532 [main] DEBUG persistence.LibroDAO -- CREATE executed
+17:41:08.536 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(id, titolo, idAutore, lingua) VALUES (?,?,?,?)
+17:41:08.626 [main] DEBUG persistence.LibroDAO -- INSERT executed
+16:42:25.474 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+16:42:25.597 [main] DEBUG persistence.LibroDAO -- DROP executed
+16:42:25.597 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id INT PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+16:42:25.712 [main] DEBUG persistence.LibroDAO -- CREATE executed
+16:42:25.713 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(id, titolo, idAutore, lingua) VALUES (?,?,?,?)
+16:42:25.801 [main] DEBUG persistence.LibroDAO -- INSERT executed
+16:48:04.782 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+16:48:04.886 [main] DEBUG persistence.LibroDAO -- DROP executed
+16:48:04.887 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+16:48:04.985 [main] DEBUG persistence.LibroDAO -- CREATE executed
+16:48:04.986 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?,?)
+16:48:05.105 [main] WARN  persistence.LibroDAO -- create(): failed to insert entry: Nessun valore specificato come parametro 4.

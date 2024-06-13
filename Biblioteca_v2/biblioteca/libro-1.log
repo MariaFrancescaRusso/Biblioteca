@@ -1,0 +1,35 @@
+19:54:33.326 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+19:54:33.410 [main] DEBUG persistence.LibroDAO -- DROP executed
+19:54:33.411 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+19:54:33.471 [main] DEBUG persistence.LibroDAO -- CREATE executed
+19:54:33.472 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+19:54:33.525 [main] DEBUG persistence.LibroDAO -- INSERT executed
+19:54:33.525 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+19:54:33.575 [main] DEBUG persistence.LibroDAO -- INSERT executed
+19:54:33.575 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
+19:54:33.630 [main] DEBUG persistence.LibroDAO -- SELECT executed
+19:55:15.265 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+19:55:15.324 [main] DEBUG persistence.LibroDAO -- DROP executed
+19:55:15.324 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+19:55:15.392 [main] DEBUG persistence.LibroDAO -- CREATE executed
+19:55:15.394 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+19:55:15.444 [main] DEBUG persistence.LibroDAO -- INSERT executed
+19:55:15.444 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+19:55:15.496 [main] DEBUG persistence.LibroDAO -- INSERT executed
+19:55:15.496 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
+19:55:15.551 [main] DEBUG persistence.LibroDAO -- SELECT executed
+19:55:15.552 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+19:55:15.601 [main] WARN  persistence.LibroDAO -- read(): failed to read entry: Cannot invoke "java.util.Set.add(Object)" because "result" is null
+19:55:57.722 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+19:55:57.791 [main] DEBUG persistence.LibroDAO -- DROP executed
+19:55:57.792 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+19:55:57.853 [main] DEBUG persistence.LibroDAO -- CREATE executed
+19:55:57.854 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+19:55:57.907 [main] DEBUG persistence.LibroDAO -- INSERT executed
+19:55:57.907 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+19:55:57.958 [main] DEBUG persistence.LibroDAO -- INSERT executed
+19:55:57.958 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
+19:55:58.019 [main] DEBUG persistence.LibroDAO -- SELECT executed
+19:55:58.020 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+19:55:58.067 [main] DEBUG persistence.LibroDAO -- SELECT executed
+19:55:58.068 [main] DEBUG persistence.LibroDAO -- SELECT executed
