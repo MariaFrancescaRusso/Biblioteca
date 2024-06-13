@@ -10,6 +10,5 @@ public class BibliotecaApplication extends ResourceConfig {
 	public BibliotecaApplication() {	
 		System.out.println("---------------- Bilbioteca Application ------------");
 		packages("service");
-		System.out.println("---------------- END Bilbioteca Application ------------");
 	}
 }

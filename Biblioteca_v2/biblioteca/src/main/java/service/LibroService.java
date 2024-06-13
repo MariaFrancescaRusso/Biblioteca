@@ -2,29 +2,49 @@ package service;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Set;
 
-import jakarta.validation.constraints.AssertFalse.List;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import model.Libro;
 import persistence.ILibroDAO;
 
 @Path("books")
 public class LibroService {
+		
+	public LibroService() {
+		System.out.println("---------- Libro Service --------------------");
+	}
+
+	@GET
+//	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response read_all() {
+		System.out.println("--------- get Books -------------"); 
+		ILibroDAO libroDAO = null; 
+		Set<Libro> libri = libroDAO.read_all();
+  
+		return Response.ok(libri).build();
+	}
 	
-	/*
-	 * @GET public List read() {
-	 * System.out.println("--------- get Books -------------"); ILibroDAO libroDAO =
-	 * null; Libro libro = libroDAO.;
-	 * 
-	 * return Response.ok(libro).build(); }
-	 */
-	
+//	@GET
+////	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public Set<Libro> read_all() {
+//		System.out.println("--------- get Books -------------"); 
+//		ILibroDAO libroDAO = null; 
+//		Set<Libro> libri = libroDAO.read_all();
+//  
+//		return libri;
+//	}
+	 	
 	@POST
 	public Response insert(Libro libro) throws URISyntaxException {
 		System.out.println("INSERT");
