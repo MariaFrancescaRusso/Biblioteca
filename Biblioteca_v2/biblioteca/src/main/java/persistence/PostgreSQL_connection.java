@@ -15,7 +15,8 @@ public class PostgreSQL_connection extends DAOFactory {
 	
 	/* connection creation */
 	public static Connection createConnection() {
-		try {
+		try { 
+			Class.forName("org.postgresql.Driver");
 			return DriverManager.getConnection(DBURL, USERNAME, PASSWORD);
 		} 
 		catch (Exception e) {
