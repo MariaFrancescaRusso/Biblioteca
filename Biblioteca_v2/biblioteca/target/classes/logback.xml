@@ -8,6 +8,9 @@
 	<import class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy"/>
 	<import class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy"/>
 	
+	<property name="LOG_DIR" value="C:/Users/ste99/OneDrive/Desktop/ES_SQL/Workspace/biblioteca"/>
+<!-- 	<property name="LOG_DIR" value="${PROJECT_LOC:/}"/> -->
+	
 	<!-- Basic configuration on Console -->
 	<appender name="STDOUT" class="ConsoleAppender">
 		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
@@ -18,10 +21,10 @@
 
 	<!-- configuration on File autore.log -->
 	<appender name="AutoreFILE" class="RollingFileAppender">
-		<file>autore.log</file>
+		<file>${LOG_DIR}/autore.log</file>
 		<!-- to save previous version of log file -->
 		<rollingPolicy class="FixedWindowRollingPolicy"> 
-			<fileNamePattern>autore-%i.log</fileNamePattern>
+			<fileNamePattern>${LOG_DIR}/autore-%i.log</fileNamePattern>
 			<minIndex>1</minIndex>
 			<maxIndex>3</maxIndex>
 		</rollingPolicy>
@@ -36,10 +39,10 @@
 	  
 	<!-- configuration on File libro.log --> 
 	<appender name="LibroFILE" class="RollingFileAppender">
-		<file>libro.log</file>
+		<file>${LOG_DIR}/libro.log</file>
 		<!-- to save previous version of log file -->
 		<rollingPolicy class="FixedWindowRollingPolicy">
-			<fileNamePattern>libro-%i.log</fileNamePattern>
+			<fileNamePattern>${LOG_DIR}/libro-%i.log</fileNamePattern>
 			<minIndex>1</minIndex>
 			<maxIndex>3</maxIndex>
 		</rollingPolicy>

@@ -1,0 +1,13 @@
+21:39:39.927 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
+21:39:40.007 [main] DEBUG persistence.LibroDAO -- DROP executed
+21:39:40.008 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
+21:39:40.196 [main] DEBUG persistence.LibroDAO -- CREATE executed
+21:39:40.197 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+21:39:40.256 [main] DEBUG persistence.LibroDAO -- INSERT executed
+21:39:40.257 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
+21:39:40.311 [main] DEBUG persistence.LibroDAO -- INSERT executed
+21:39:40.311 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
+21:39:40.370 [main] DEBUG persistence.LibroDAO -- SELECT executed
+21:39:40.371 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+21:39:40.423 [main] DEBUG persistence.LibroDAO -- SELECT executed
+21:39:40.424 [main] DEBUG persistence.LibroDAO -- SELECT executed
