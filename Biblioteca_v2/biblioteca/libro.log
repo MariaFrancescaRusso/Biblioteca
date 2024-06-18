@@ -1,13 +1,7 @@
-22:21:43.932 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
-22:21:44.016 [main] DEBUG persistence.LibroDAO -- DROP executed
-22:21:44.016 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
-22:21:44.087 [main] DEBUG persistence.LibroDAO -- CREATE executed
-22:21:44.089 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:21:44.143 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:21:44.143 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:21:44.197 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:21:44.197 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
-22:21:44.254 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:21:44.255 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
-22:21:44.418 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:21:44.418 [main] DEBUG persistence.LibroDAO -- SELECT executed
+02:50:39.556 [http-nio-8080-exec-3] INFO  service.LibroService -- read_by_id() --> SELECT * FROM libri WHERE ID = 2
+02:50:39.556 [http-nio-8080-exec-3] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
+02:50:39.822 [http-nio-8080-exec-3] DEBUG persistence.LibroDAO -- SELECT by ID executed
+02:50:39.822 [http-nio-8080-exec-3] DEBUG service.LibroService -- SELECT by ID executed: Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]
+02:50:43.888 [http-nio-8080-exec-1] INFO  service.LibroService -- read_by_id() --> SELECT * FROM libri WHERE ID = 4
+02:50:43.888 [http-nio-8080-exec-1] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
+02:50:43.942 [http-nio-8080-exec-1] DEBUG service.LibroService -- SELECT by ID not executed: ID={} not found

@@ -105,8 +105,8 @@ public class LibroDAO implements ILibroDAO {
 				entry.setLingua(res.getString(LANGUAGE));
 				
 				result.add(entry);
-				logger.debug("SELECT executed");
 			}
+			logger.debug("SELECT executed");
 			
 			res.close();
 			statement.close();
@@ -147,7 +147,7 @@ public class LibroDAO implements ILibroDAO {
 				entry.setLingua(res.getString(LANGUAGE));
 				
 				result = entry;
-				logger.debug("SELECT executed");
+				logger.debug("SELECT by ID executed");
 			}
 			
 			res.close();

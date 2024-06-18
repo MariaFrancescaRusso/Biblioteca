@@ -1,39 +1,29 @@
-17:35:37.761 [32m[0;39m[main] INFO  persistence.AutoreDAO -- dropTable() --> DROP: DROP TABLE autori CASCADE
-17:35:38.184 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- DROP executed
-17:35:38.184 [32m[0;39m[main] INFO  persistence.AutoreDAO -- createTable() --> CREATE: CREATE TABLE autori ( id INT PRIMARY KEY, nome VARCHAR NOT NULL, cognome VARCHAR NOT NULL )
-17:35:38.278 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- CREATE executed
-17:35:38.280 [32m[0;39m[main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
-17:35:38.383 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- INSERT executed
-17:35:38.383 [32m[0;39m[main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
-17:35:38.509 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- INSERT executed
-17:35:38.905 [32m[0;39m[main] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
-17:35:38.965 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- SELECT executed
-17:35:38.965 [32m[0;39m[main] INFO  persistence.AutoreDAO -- read_all() --> SELECT: SELECT * FROM autori
-17:35:39.022 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- SELECT executed
-17:35:39.022 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- SELECT executed
-17:39:17.293 [32m[0;39m[main] INFO  persistence.AutoreDAO -- dropTable() --> DROP: DROP TABLE autori CASCADE
-17:39:17.681 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- DROP executed
-17:39:17.684 [32m[0;39m[main] INFO  persistence.AutoreDAO -- createTable() --> CREATE: CREATE TABLE autori ( id INT PRIMARY KEY, nome VARCHAR NOT NULL, cognome VARCHAR NOT NULL )
-17:39:17.765 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- CREATE executed
-17:39:17.768 [32m[0;39m[main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
-17:39:17.852 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- INSERT executed
-17:39:17.852 [32m[0;39m[main] INFO  persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
-17:39:17.938 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- INSERT executed
-17:39:18.322 [32m[0;39m[main] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
-17:39:18.384 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- SELECT executed
-17:39:18.385 [32m[0;39m[main] INFO  persistence.AutoreDAO -- read_all() --> SELECT: SELECT * FROM autori
-17:39:18.444 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- SELECT executed
-17:39:18.444 [32m[0;39m[main] DEBUG persistence.AutoreDAO -- SELECT executed
-17:40:45.400 [32m[main][0;39m [34mINFO [0;39m persistence.AutoreDAO -- dropTable() --> DROP: DROP TABLE autori CASCADE
-17:40:45.797 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- DROP executed
-17:40:45.798 [32m[main][0;39m [34mINFO [0;39m persistence.AutoreDAO -- createTable() --> CREATE: CREATE TABLE autori ( id INT PRIMARY KEY, nome VARCHAR NOT NULL, cognome VARCHAR NOT NULL )
-17:40:45.882 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- CREATE executed
-17:40:45.886 [32m[main][0;39m [34mINFO [0;39m persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
-17:40:45.971 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- INSERT executed
-17:40:45.972 [32m[main][0;39m [34mINFO [0;39m persistence.AutoreDAO -- create() --> INSERT: INSERT INTO autori(id, nome, cognome) VALUES (?,?,?)
-17:40:46.051 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- INSERT executed
-17:40:46.572 [32m[main][0;39m [34mINFO [0;39m persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
-17:40:46.621 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- SELECT executed
-17:40:46.622 [32m[main][0;39m [34mINFO [0;39m persistence.AutoreDAO -- read_all() --> SELECT: SELECT * FROM autori
-17:40:46.677 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- SELECT executed
-17:40:46.677 [32m[main][0;39m [39mDEBUG[0;39m persistence.AutoreDAO -- SELECT executed
+18:07:50.889 [http-nio-8080-exec-4] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 0
+18:07:50.902 [http-nio-8080-exec-4] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+18:07:51.263 [http-nio-8080-exec-4] DEBUG service.AutoreService -- SELECT by ID executed
+23:43:21.426 [http-nio-8080-exec-2] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 1
+23:43:21.437 [http-nio-8080-exec-2] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+23:43:21.929 [http-nio-8080-exec-2] DEBUG persistence.AutoreDAO -- SELECT by ID executed
+23:43:21.931 [http-nio-8080-exec-2] DEBUG service.AutoreService -- SELECT by ID executed: Autore [idAutore=1, nome=Oscar, cognome=Wilde]
+23:45:27.584 [http-nio-8080-exec-1] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 0
+23:45:27.593 [http-nio-8080-exec-1] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+23:45:27.963 [http-nio-8080-exec-1] DEBUG service.AutoreService -- SELECT by ID executed: null
+00:14:36.952 [http-nio-8080-exec-3] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 2
+00:14:36.959 [http-nio-8080-exec-3] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+00:14:37.433 [http-nio-8080-exec-3] DEBUG persistence.AutoreDAO -- SELECT by ID executed
+00:14:37.435 [http-nio-8080-exec-3] DEBUG service.AutoreService -- SELECT by ID executed: Autore [idAutore=2, nome=Edgar, cognome=Allan Poe]
+00:35:10.791 [http-nio-8080-exec-4] INFO  service.AutoreService -- read_all() --> SELECT * FROM autori
+00:35:10.791 [http-nio-8080-exec-4] INFO  persistence.AutoreDAO -- read_all() --> SELECT: SELECT * FROM autori
+00:35:10.858 [http-nio-8080-exec-4] DEBUG persistence.AutoreDAO -- SELECT executed
+00:35:10.858 [http-nio-8080-exec-4] DEBUG service.AutoreService -- SELECT executed: [Autore [idAutore=1, nome=Oscar, cognome=Wilde], Autore [idAutore=2, nome=Edgar, cognome=Allan Poe]]
+00:35:15.370 [http-nio-8080-exec-5] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 3
+00:35:15.371 [http-nio-8080-exec-5] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+00:35:15.437 [http-nio-8080-exec-5] DEBUG service.AutoreService -- SELECT by ID executed: null
+00:35:54.278 [http-nio-8080-exec-7] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 2
+00:35:54.279 [http-nio-8080-exec-7] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+00:35:54.343 [http-nio-8080-exec-7] DEBUG persistence.AutoreDAO -- SELECT by ID executed
+00:35:54.343 [http-nio-8080-exec-7] DEBUG service.AutoreService -- SELECT by ID executed: Autore [idAutore=2, nome=Edgar, cognome=Allan Poe]
+00:37:47.840 [http-nio-8080-exec-2] INFO  service.AutoreService -- read_by_id() --> SELECT * FROM autori WHERE ID = 2
+00:37:47.847 [http-nio-8080-exec-2] INFO  persistence.AutoreDAO -- read_by_id() --> SELECT: SELECT * FROM autori WHERE id = ?
+00:37:48.228 [http-nio-8080-exec-2] DEBUG persistence.AutoreDAO -- SELECT by ID executed
+00:37:48.230 [http-nio-8080-exec-2] DEBUG service.AutoreService -- SELECT by ID executed: Autore [idAutore=2, nome=Edgar, cognome=Allan Poe]

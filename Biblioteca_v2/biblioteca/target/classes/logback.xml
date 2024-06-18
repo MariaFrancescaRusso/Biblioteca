@@ -59,11 +59,17 @@
 	<logger name="persistence.AutoreDAO">
 		<appender-ref ref="AutoreFILE" /> 
 	</logger> 
+	<logger name="service.AutoreService">
+		<appender-ref ref="AutoreFILE" /> 
+	</logger> 
 	
 	<!-- File libro.log with only its log -->
 	<logger name="persistence.LibroDAO">
 		<appender-ref ref="LibroFILE" />
-	</logger> 
+	</logger>
+	<logger name="service.LibroService">
+		<appender-ref ref="LibroFILE" />
+	</logger>  
 
 	<root level="debug">
 		<appender-ref ref="STDOUT" />  

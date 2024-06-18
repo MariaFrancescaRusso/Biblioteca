@@ -1,39 +1,24 @@
-22:02:00.390 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
-22:02:00.466 [main] DEBUG persistence.LibroDAO -- DROP executed
-22:02:00.467 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
-22:02:00.543 [main] DEBUG persistence.LibroDAO -- CREATE executed
-22:02:00.544 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:02:00.597 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:02:00.597 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:02:00.653 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:02:00.653 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
-22:02:00.711 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:02:00.712 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
-22:02:00.767 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:02:00.767 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:11:03.831 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
-22:11:03.912 [main] DEBUG persistence.LibroDAO -- DROP executed
-22:11:03.912 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
-22:11:03.977 [main] DEBUG persistence.LibroDAO -- CREATE executed
-22:11:03.978 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:11:04.033 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:11:04.033 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:11:04.087 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:11:04.087 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
-22:11:04.144 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:11:04.145 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
-22:11:04.195 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:11:04.195 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:11:45.343 [main] INFO  persistence.LibroDAO -- dropTable() --> DROP: DROP TABLE libri
-22:11:45.426 [main] DEBUG persistence.LibroDAO -- DROP executed
-22:11:45.427 [main] INFO  persistence.LibroDAO -- createTable() --> CREATE: CREATE TABLE libri ( id SERIAL PRIMARY KEY, titolo VARCHAR NOT NULL, idAutore INT REFERENCES autori(id), lingua VARCHAR NOT NULL )
-22:11:45.493 [main] DEBUG persistence.LibroDAO -- CREATE executed
-22:11:45.494 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:11:45.546 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:11:45.546 [main] INFO  persistence.LibroDAO -- create() --> INSERT: INSERT INTO libri(titolo, idAutore, lingua) VALUES (?,?,?)
-22:11:45.597 [main] DEBUG persistence.LibroDAO -- INSERT executed
-22:11:45.599 [main] INFO  persistence.LibroDAO -- read_by_id() --> SELECT: SELECT * FROM libri WHERE id = ?
-22:11:45.667 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:11:45.668 [main] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
-22:11:45.717 [main] DEBUG persistence.LibroDAO -- SELECT executed
-22:11:45.717 [main] DEBUG persistence.LibroDAO -- SELECT executed
+02:32:17.973 [http-nio-8080-exec-21] INFO  service.LibroService -- read_all() --> SELECT * FROM libri
+02:32:17.984 [http-nio-8080-exec-21] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+02:32:18.226 [http-nio-8080-exec-21] DEBUG persistence.LibroDAO -- SELECT executed
+02:32:18.228 [http-nio-8080-exec-21] DEBUG service.LibroService -- SELECT executed: [Libro [id=1, titolo=Il gigante egoista e altri racconti, idAutore=1, lingua=italiano], Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]]
+02:32:57.328 [http-nio-8080-exec-20] INFO  service.LibroService -- read_all() --> SELECT * FROM libri
+02:32:57.332 [http-nio-8080-exec-20] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+02:32:57.678 [http-nio-8080-exec-20] DEBUG persistence.LibroDAO -- SELECT executed
+02:32:57.679 [http-nio-8080-exec-20] DEBUG service.LibroService -- SELECT executed: [Libro [id=1, titolo=Il gigante egoista e altri racconti, idAutore=1, lingua=italiano], Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]]
+02:36:38.193 [http-nio-8080-exec-26] INFO  service.LibroService -- read_all() --> SELECT * FROM libri
+02:36:38.197 [http-nio-8080-exec-26] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+02:36:38.436 [http-nio-8080-exec-26] DEBUG persistence.LibroDAO -- SELECT executed
+02:36:38.437 [http-nio-8080-exec-26] DEBUG service.LibroService -- SELECT executed: [Libro [id=1, titolo=Il gigante egoista e altri racconti, idAutore=1, lingua=italiano], Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]]
+02:37:27.098 [http-nio-8080-exec-28] INFO  service.LibroService -- read_all() --> SELECT * FROM libri
+02:37:27.103 [http-nio-8080-exec-28] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+02:37:27.343 [http-nio-8080-exec-28] DEBUG persistence.LibroDAO -- SELECT executed
+02:37:27.345 [http-nio-8080-exec-28] DEBUG service.LibroService -- SELECT executed: [Libro [id=1, titolo=Il gigante egoista e altri racconti, idAutore=1, lingua=italiano], Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]]
+02:39:11.977 [http-nio-8080-exec-33] INFO  service.LibroService -- read_all() --> SELECT * FROM libri
+02:39:11.982 [http-nio-8080-exec-33] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+02:39:12.226 [http-nio-8080-exec-33] DEBUG persistence.LibroDAO -- SELECT executed
+02:39:12.228 [http-nio-8080-exec-33] DEBUG service.LibroService -- SELECT executed: [Libro [id=1, titolo=Il gigante egoista e altri racconti, idAutore=1, lingua=italiano], Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]]
+02:39:52.602 [http-nio-8080-exec-30] INFO  service.LibroService -- read_all() --> SELECT * FROM libri
+02:39:52.606 [http-nio-8080-exec-30] INFO  persistence.LibroDAO -- read_all() --> SELECT: SELECT * FROM libri
+02:39:52.851 [http-nio-8080-exec-30] DEBUG persistence.LibroDAO -- SELECT executed
+02:39:52.853 [http-nio-8080-exec-30] DEBUG service.LibroService -- SELECT executed: [Libro [id=1, titolo=Il gigante egoista e altri racconti, idAutore=1, lingua=italiano], Libro [id=2, titolo=Il pozzo e il pendolo e altri racconti, idAutore=2, lingua=italiano]]

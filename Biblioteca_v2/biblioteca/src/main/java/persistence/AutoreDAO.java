@@ -96,8 +96,8 @@ public class AutoreDAO implements IAutoreDAO {
 				entry.setCognome(res.getString(SURNAME));
 				
 				result.add(entry);
-				logger.debug("SELECT executed");
 			}
+			logger.debug("SELECT executed");
 			
 			res.close();
 			statement.close();
@@ -137,7 +137,7 @@ public class AutoreDAO implements IAutoreDAO {
 				entry.setCognome(res.getString(SURNAME));
 				
 				result = entry;
-				logger.debug("SELECT executed");
+				logger.debug("SELECT by ID executed");
 			}
 			
 			res.close();
